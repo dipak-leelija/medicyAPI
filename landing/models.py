@@ -11,3 +11,13 @@ class Plans(models.Model):
     class Meta:
         managed = False
         db_table = 'plans'
+
+class PlansFeatures(models.Model):
+    id       = models.IntegerField(primary_key = True)
+    plan_id  = models.IntegerField()
+    features = models.CharField(max_length = 100)
+    status   = models.IntegerField() 
+
+    class Meta:
+        managed =False
+        db_table = 'plans_features'
