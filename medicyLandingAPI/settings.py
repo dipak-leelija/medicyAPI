@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'medicyLandingAPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'medicy_db',
+        'NAME': 'medicy_api',
         'USER': 'root',
         'PASSWORD' : '',
         'HOST' : 'localhost',
