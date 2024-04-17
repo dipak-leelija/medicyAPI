@@ -1,11 +1,13 @@
 from django.db import models
 
-# Create your models here.
-# class Plan(models.Model):
-#     name = models.CharField(max_length=100)
-#     price = models.DecimalField(max_digits=10, decimal_places=2)
-#     duration = models.CharField(max_length=50)
-#     status = models.IntegerField()
+# Own models here.
+class Plans(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=55)
+    price = models.FloatField()
+    duration = models.CharField(max_length=20)
+    status = models.IntegerField()
 
-#     class Meta:
-#         db_table = 'plans'
+    class Meta:
+        managed = False
+        db_table = 'plans'
