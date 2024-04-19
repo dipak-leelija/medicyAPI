@@ -13,7 +13,7 @@ def plans(request):
         features_d = []
         for plan_fet in plan_features:
             features_d.append({
-                # 'id': plan_fet.id,
+                'id': plan_fet.id,
                 'feature': plan_fet.features,
                 'status': plan_fet.status
             })
